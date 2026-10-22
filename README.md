@@ -48,18 +48,3 @@ The results demonstrate that contextual subword representations (Transformers) s
 * **Neutral is easiest:** All models performed best on the Neutral class ($F_1 \ge 0.97$) due to direct, factual vocabulary.
 * **Embedding Trade-offs:** FastText benefits CNN architectures by capturing local subword features, while Word2Vec slightly favors LSTM networks for capturing sequential dependency.
 * **Vocabulary Dynamics:** Positive sentiment relies heavily on honorifics and epithets (e.g., *Best*, *Legend*), whereas Negative sentiment is often driven by off-field controversies (e.g., *Gambling*).
-
-## Repository Structure
-
-```text
-├── data/
-│   ├── raw/                 # Original combined dataset
-│   └── processed/           # Cleaned and tokenized splits (Train/Val/Test)
-├── embeddings/              # Directory for pre-trained Word2Vec/FastText weights
-├── src/
-│   ├── preprocess.py        # Regex cleaning, filtering, and TF-IDF extraction
-│   ├── train_ml.py          # Script for LR, NB, SVM, RF models
-│   ├── train_dl.py          # Script for 1D-CNN, LSTM, GRU (PyTorch/TensorFlow)
-│   └── train_transformer.py # Script for BanglaBERT and XLM-RoBERTa fine-tuning
-├── requirements.txt         # Python dependencies
-└── README.md
