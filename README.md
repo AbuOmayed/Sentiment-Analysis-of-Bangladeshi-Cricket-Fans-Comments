@@ -1,5 +1,7 @@
 # BD-CricketSent: A Dataset for Sentiment Analysis of Bangladeshi Cricket Fans' Comments
 
+### Note: This dataset will be made publicly available upon the paper's publication (currently under peer review).
+
 This repository contains the official dataset and codebase for the paper **BD-CricketSent: A Dataset for Sentiment Analysis of Bangladeshi Cricket Fans' Comments**. It provides a comprehensive framework for evaluating sentiment analysis models on noisy, low-resource, and highly informal Bangla social media text.
 
 ## Overview
